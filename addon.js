@@ -35,7 +35,7 @@ const builder = new addonBuilder({
   background:
     "https://raw.githubusercontent.com/Ju1-js/synkuru/main/addon-background.png",
   logo: "https://raw.githubusercontent.com/Ju1-js/synkuru/main/addon-logo.png",
-  resources: ["catalog",/* "meta", */"subtitles"],
+  resources: ["catalog", /* "meta", */ "subtitles"],
   types: ["anime", "movie", "series"],
   catalogs: CATALOGS,
   idPrefixes: ["anilist", "tt", "kitsu"],

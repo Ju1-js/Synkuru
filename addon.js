@@ -6,23 +6,23 @@ const { handleWatchedEpisode } = require("./lib/anilist");
 
 const CATALOGS = [
   // { id: "RELEASES", type: "anime", name: "New Releases" }, // Will need to be per RSS feed eventually - NOT IMPLEMENTED YET
-  { id: "CURRENT", type: "anime", name: "Continue Watching" },
-  { id: "WATCHING", type: "anime", name: "Watching List" },
-  { id: "REPEATING", type: "anime", name: "Repeating" },
-  { id: "SEQUELS", type: "anime", name: "Sequels You Missed" },
-  { id: "STORIES", type: "anime", name: "Stories You Missed" },
-  { id: "PLANNING", type: "anime", name: "Planning List" },
-  { id: "PAUSED", type: "anime", name: "Paused" },
-  { id: "DROPPED", type: "anime", name: "Dropped" },
-  { id: "COMPLETED", type: "anime", name: "Completed" },
-  { id: "POPULAR", type: "anime", name: "Popular This Season" },
-  { id: "TRENDING", type: "anime", name: "Trending Now" },
-  { id: "ALLPOPULAR", type: "anime", name: "All Time Popular" },
-  { id: "ROMANCE", type: "anime", name: "Romance" },
-  { id: "ACTION", type: "anime", name: "Action" },
-  { id: "ADVENTURE", type: "anime", name: "Adventure" },
-  { id: "FANTASY", type: "anime", name: "Fantasy" },
-  { id: "COMEDY", type: "anime", name: "Comedy" },
+  { id: "SYN_CURRENT", type: "anime", name: "Continue Watching" },
+  { id: "SYN_WATCHING", type: "anime", name: "Watching List" },
+  { id: "SYN_REPEATING", type: "anime", name: "Repeating" },
+  { id: "SYN_SEQUELS", type: "anime", name: "Sequels You Missed" },
+  { id: "SYN_STORIES", type: "anime", name: "Stories You Missed" },
+  { id: "SYN_PLANNING", type: "anime", name: "Planning List" },
+  { id: "SYN_PAUSED", type: "anime", name: "Paused" },
+  { id: "SYN_DROPPED", type: "anime", name: "Dropped" },
+  { id: "SYN_COMPLETED", type: "anime", name: "Completed" },
+  { id: "SYN_POPULAR", type: "anime", name: "Popular This Season" },
+  { id: "SYN_TRENDING", type: "anime", name: "Trending Now" },
+  { id: "SYN_ALLPOPULAR", type: "anime", name: "All Time Popular" },
+  { id: "SYN_ROMANCE", type: "anime", name: "Romance" },
+  { id: "SYN_ACTION", type: "anime", name: "Action" },
+  { id: "SYN_ADVENTURE", type: "anime", name: "Adventure" },
+  { id: "SYN_FANTASY", type: "anime", name: "Fantasy" },
+  { id: "SYN_COMEDY", type: "anime", name: "Comedy" },
 ];
 
 // Docs: https://github.com/Stremio/stremio-addon-sdk/blob/master/docs/api/responses/manifest.md
@@ -33,9 +33,9 @@ const builder = new addonBuilder({
   description:
     "Synkuru interfaces with Anilist and allows custom AnimeTosho RSS feeds.",
   background:
-    "https://raw.githubusercontent.com/Ju1-js/Synkuru/main//addon-background.jpg",
-  logo: "https://raw.githubusercontent.com/Ju1-js/Synkuru/main/addon-logo.png",
-  resources: ["catalog", "meta", "subtitles"],
+    "https://raw.githubusercontent.com/Ju1-js/synkuru/main/addon-background.png",
+  logo: "https://raw.githubusercontent.com/Ju1-js/synkuru/main/addon-logo.png",
+  resources: ["catalog",/* "meta", */"subtitles"],
   types: ["anime", "movie", "series"],
   catalogs: CATALOGS,
   idPrefixes: ["anilist", "tt", "kitsu"],

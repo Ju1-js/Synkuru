@@ -7,10 +7,15 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "anilist-node": "^1.14.0",
-    "axios": "^1.5.0",
-    "patch-package": "^8.0.0",
-    "sqlite3": "^5.1.7",
-    "stremio-addon-sdk": "^0.7.1"
+    "axios": "~1.8.3",
+    "bottleneck": "^2.19.5",
+    "node-fetch": "^3.3.2",
+    "patch-package": "~8.0.0",
+    "sqlite3": "~5.1.7",
+    "stremio-addon-sdk": "~1.6.10"
+  },
+  "overrides": {
+    "router": "~1.3.8",
+    "path-to-regexp": "~0.1.10"
   }
 }

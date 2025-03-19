@@ -3,7 +3,7 @@ const { getCatalog } = require("./lib/anilist");
 const { processSubtitleRequest } = require("./lib/subtitles");
 
 const CATALOGS = [
-  // { id: "RELEASES", type: "anime", name: "New Releases" }, // Will need to be per RSS feed eventually - NOT IMPLEMENTED YET
+  // { id: "SYN_RELEASES", type: "anime", name: "New Releases" }, // Will need to be per RSS feed eventually - NOT IMPLEMENTED YET
   { id: "SYN_CURRENT", type: "anime", name: "Continue Watching" },
   { id: "SYN_WATCHING", type: "anime", name: "Watching List" },
   { id: "SYN_REPEATING", type: "anime", name: "Repeating" },
@@ -31,8 +31,8 @@ const builder = new addonBuilder({
   description:
     "Synkuru interfaces with Anilist and allows custom AnimeTosho RSS feeds.",
   background:
-    "https://raw.githubusercontent.com/Ju1-js/synkuru/main/addon-background.png",
-  logo: "https://raw.githubusercontent.com/Ju1-js/synkuru/main/addon-logo.png",
+    "https://raw.githubusercontent.com/Ju1-js/synkuru/main/static/media/addon-background.png",
+  logo: "https://raw.githubusercontent.com/Ju1-js/synkuru/main/static/media/addon-logo.png",
   resources: ["catalog", /* "meta", */ "subtitles"],
   types: ["anime", "movie", "series"],
   catalogs: CATALOGS,

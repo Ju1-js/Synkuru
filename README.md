@@ -1,4 +1,4 @@
-<img src="SynLogo.svg" alt="Synkuru" width="500"/>
+<img src="static/media/addon-banner.svg" alt="Synkuru" width="500"/>
 
 Stremio addon that uses the AniList API to track your anime series/movie progress.
 Synkuru is a fork of Animeo.

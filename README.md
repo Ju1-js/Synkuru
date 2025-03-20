@@ -5,7 +5,7 @@ Synkuru is a fork of Animeo.
 *(Sync + Kuru [来る, "to come"])*
 
 ### How to use it
-Go to the [addon configuration URL](https://REPLACEME.baby-beamup.club/configure), click on the **ANILIST LOGIN** button, and follow the remaining instructions on the page.
+Go to the [addon configuration URL](https://REPLACEME/configure), click on the **ANILIST LOGIN** button, and follow the remaining instructions on the page.
 
 Then, just watch any anime through Stremio's Cinemeta or Kitsu catalogs. I **strongly** recommend using Kitsu, as the Kitsu ID of the anime will be converted to the equivalent AniList ID if there is an AniList entry available for the anime.
 

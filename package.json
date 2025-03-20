@@ -2,6 +2,7 @@
   "name": "synkuru",
   "version": "0.0.1",
   "description": "Synkuru interfaces with Anilist and allows custom AnimeTosho RSS feeds.",
+  "type": "module",
   "scripts": {
     "start": "node server.js",
     "postinstall": "patch-package"
@@ -12,7 +13,7 @@
     "dotenv": "^16.4.7",
     "node-fetch": "^3.3.2",
     "patch-package": "~8.0.0",
-    "sqlite3": "~5.1.7",
+    "postgres": "~3.4.5",
     "stremio-addon-sdk": "~1.6.10"
   },
   "overrides": {

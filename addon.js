@@ -1,6 +1,6 @@
-const { addonBuilder } = require("stremio-addon-sdk");
-const { getCatalog } = require("./lib/anilist");
-const { processSubtitleRequest } = require("./lib/subtitles");
+import { addonBuilder } from "stremio-addon-sdk";
+import { getCatalog } from "./lib/anilist.js";
+import { processSubtitleRequest } from "./lib/subtitles.js";
 
 const CATALOGS = [
   // { id: "SYN_RELEASES", type: "anime", name: "New Releases" }, // Will need to be per RSS feed eventually - NOT IMPLEMENTED YET
@@ -69,4 +69,4 @@ builder.defineCatalogHandler(async (args) => {
   }
 });
 
-module.exports = builder.getInterface();
+export default builder.getInterface();
